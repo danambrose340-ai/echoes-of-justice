@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #0a0a0a;
+  --charcoal: #1a1a1a;
+  --deep-red: #b30000;
+  --white: #ffffff;
+  --text-muted: #a0a0a8;
+  --border: #26262b;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Text wrapping: balance short headings, pretty for paragraphs */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Touch targets: minimum 44px (WCAG 2.5.5) */
+button,
+[role='button'],
+a.btn,
+input[type='submit'] {
+  min-height: 44px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--deep-red);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: var(--deep-red);
+  color: white;
+  padding: 0.75rem 1.25rem;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* Serif accent typography */
+.serif {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+/* Editorial badges */
+.editorial-badge {
+  border-left-width: 4px;
+}
+
+/* Printable documents: the rights one-pager */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+  }
+
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-doc,
+  .print-doc * {
+    background: transparent !important;
+    color: #111111 !important;
+    border-color: #bbbbbb !important;
+    box-shadow: none !important;
+  }
+
+  .print-doc {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-doc h1 {
+    font-size: 20pt;
+    line-height: 1.15;
+  }
+
+  .print-doc h2 {
+    font-size: 12pt;
+    margin-bottom: 4pt;
+  }
+
+  .print-doc h3 {
+    font-size: 10pt;
+  }
+
+  .print-doc p,
+  .print-doc li,
+  .print-doc a {
+    font-size: 9.5pt;
+    line-height: 1.35;
+  }
+
+  .print-doc .print-card,
+  .print-doc .print-note {
+    border: 1px solid #bbbbbb !important;
+    padding: 5pt 7pt !important;
+    break-inside: avoid;
+  }
+
+  .print-doc .print-strong {
+    font-weight: 700;
+  }
+
+  .print-doc a {
+    text-decoration: underline;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

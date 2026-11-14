@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="180" viewBox="0 0 660 180" role="img" aria-labelledby="title description">
+  <title id="title">Echoes of Justice</title>
+  <desc id="description">Echoes of Justice, Their Stories. Their Truth. Their Echo.</desc>
+  <defs>
+    <linearGradient id="ember" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0b47c"/>
+      <stop offset="1" stop-color="#b85d48"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(14 18)">
+    <path d="M72 2 132 36v68l-60 34-60-34V36z" fill="#191818" stroke="url(#ember)" stroke-width="3"/>
+    <path d="M72 17 118 43v53l-46 26-46-26V43z" fill="none" stroke="#eee4d8" stroke-opacity=".46"/>
+    <path d="M50 42h44M50 58h30M50 74h38M50 90h24" fill="none" stroke="#f0b47c" stroke-linecap="round" stroke-width="5"/>
+    <path d="M100 40c-8 8-8 16 0 24s8 16 0 24" fill="none" stroke="#f7eee5" stroke-linecap="round" stroke-width="3" opacity=".85"/>
+  </g>
+  <g fill="#f4eee7">
+    <text x="168" y="81" font-family="Georgia, 'Times New Roman', serif" font-size="39" font-weight="700" letter-spacing=".2">ECHOES OF</text>
+    <text x="168" y="124" font-family="Georgia, 'Times New Roman', serif" font-size="43" font-weight="700" letter-spacing="1.2">JUSTICE</text>
+  </g>
+  <path d="M170 141h437" stroke="#b85d48" stroke-width="2"/>
+  <text x="170" y="164" fill="#d0c3b7" font-family="Arial, sans-serif" font-size="12" letter-spacing="2.1">THEIR STORIES · THEIR TRUTH · THEIR ECHO</text>
+</svg>

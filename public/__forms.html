@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Form definitions</title>
+  </head>
+  <body>
+    <!-- Not shown to visitors. The host reads this file at deploy time to register
+         the forms that lib/forms.ts submits. Keep field names in sync with the pages. -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+
+    <form name="family-story" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="family-story" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="subject_name" />
+      <input name="relationship" />
+      <textarea name="story"></textarea>
+      <input name="publication_consent" />
+    </form>
+
+    <form name="due-process-intake" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="due-process-intake" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="county" />
+      <input name="agency" />
+      <input name="case_number" />
+      <input name="removal_date" />
+      <input name="has_counsel" />
+      <textarea name="narrative"></textarea>
+      <input name="documents" />
+      <input name="contact_consent" />
+    </form>
+
+    <form name="volunteer" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="volunteer" />
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="city" />
+      <input name="skills" />
+      <input name="availability" />
+      <input name="references" />
+      <textarea name="motivation"></textarea>
+    </form>
+  </body>
+</html>

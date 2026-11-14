@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-labelledby="title">
+  <title id="title">Echoes of Justice emblem</title>
+  <defs>
+    <linearGradient id="ember" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0b47c"/>
+      <stop offset="1" stop-color="#b85d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" rx="36" fill="#101010"/>
+  <path d="M96 18 168 59v74l-72 41-72-41V59z" fill="#191818" stroke="url(#ember)" stroke-width="4"/>
+  <path d="M96 36 151 67v57l-55 32-55-32V67z" fill="none" stroke="#eee4d8" stroke-opacity=".46" stroke-width="2"/>
+  <path d="M69 67h54M69 86h37M69 105h48M69 124h28" fill="none" stroke="#f0b47c" stroke-linecap="round" stroke-width="7"/>
+  <path d="M132 64c-10 10-10 21 0 31s10 21 0 31" fill="none" stroke="#f7eee5" stroke-linecap="round" stroke-width="4"/>
+</svg>
