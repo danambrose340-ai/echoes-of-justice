@@ -5,6 +5,11 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Next.js runtime: serves the API routes and the server-rendered pages
+# (/cases/[id], /missing/[id], /stories/[id]) as Netlify functions.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
 [[headers]]
   for = "/*"
   [headers.values]
