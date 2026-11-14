@@ -81,6 +81,59 @@ export const siteConfig: SiteConfig = {
         agency: 'U.S. District Court, District of Colorado',
       },
     },
+    {
+      id: 6,
+      slug: 'benjamin-greenfield',
+      name: 'Benjamin Greenfield',
+      img: '',
+      date: 'April 2026',
+      incidentDate: 'April 4, 2026',
+      location: 'Colorado Springs, El Paso County, CO',
+      status: 'Ruled justified by the District Attorney · No charges filed',
+      summary:
+        'Benjamin Greenfield, 40, was shot and killed by three Colorado Springs police officers in the parking lot of a McDonald\'s on North Academy Boulevard. The officers fired 39 rounds in under ten seconds and he was hit about ten times. The district attorney ruled the shooting justified, finding that Greenfield fired first.',
+      facts:
+        'Three Colorado Springs police officers fired a combined 39 rounds on April 4, 2026. Greenfield was hit about ten times and died at a hospital. The district attorney found he fired one shot at officers first and ruled the shooting justified on August 17, 2026.',
+      meta: '4th Judicial District Attorney, Release #2026-12 · Investigated by the El Paso County Sheriff\'s Office · Record last checked November 14, 2026',
+      content: [
+        {
+          type: 'verified',
+          heading: 'What the public record shows',
+          text: 'Just before 11 p.m. on April 4, 2026, six Colorado Springs police officers and one El Paso County sheriff\'s deputy, working together as a task force, moved in on Benjamin Greenfield\'s pickup truck in the parking lot of a 24-hour McDonald\'s in the 1200 block of North Academy Boulevard. They boxed the truck in with their vehicles. The truck reversed into an unmarked police truck, drove forward through a fence and became stuck on a curb. Three officers then fired a combined 39 rounds from their handguns: 17, 16 and 6. Greenfield was hit about ten times. Officers gave first aid and he was taken to a hospital, where he died. The El Paso County Coroner ruled that he died of multiple gunshot wounds. The sheriff\'s deputy at the scene did not fire.',
+        },
+        {
+          type: 'verified',
+          heading: 'Official findings',
+          text: 'The El Paso County Sheriff\'s Office investigated the shooting, as Colorado law requires an outside agency to do. On August 17, 2026, the 4th Judicial District Attorney\'s Office ruled that the three officers were justified in using deadly force and filed no charges. Its report says a .40 caliber handgun was recovered from the passenger-side floorboard of the truck. The report also says every Colorado Springs officer involved had a body-worn camera recording.',
+        },
+        {
+          type: 'allegation',
+          heading: 'What the officers and the District Attorney say',
+          text: 'The district attorney\'s report says officers knew Greenfield from earlier cases, believed he was usually armed, and believed a drug deal was taking place in the truck. It says officers identified themselves, ordered him out and told him he was under arrest, and that he kept pressing the accelerator after the truck was stuck. An officer threw rocks through the tinted driver\'s window so that a pepper-ball launcher could be used. According to the report, officers then saw Greenfield reaching around inside the truck, and he fired one shot through his window that struck the bullet-resistant windshield of the police truck. One officer told investigators he heard a pop, saw a muzzle flash and was hit in the face by glass. The three officers said they fired because they feared for their own lives, other officers and people inside the restaurant.',
+        },
+        {
+          type: 'unconfirmed',
+          heading: 'What remains unclear',
+          text: 'In the body-camera footage the police department released on April 24, 2026, one officer asks whether a noise he heard was a gunshot before another answers that Greenfield is shooting, according to the Colorado Springs Gazette. That release showed one officer\'s camera only; we have not seen the full recordings. Official accounts differ on the passenger: the district attorney\'s report describes a woman getting into the truck, and the Gazette reported that a passenger ran and was arrested. We have not found any public statement from Greenfield\'s family or from an attorney acting for them, or any lawsuit over his death. The account above therefore comes from police and prosecutors. If you are a member of his family and want to add to or correct this record, please contact us.',
+        },
+      ],
+      timeline: [
+        { date: 'April 4, 2026', event: 'Benjamin Greenfield is shot by three Colorado Springs police officers in a McDonald\'s parking lot on North Academy Boulevard and dies at a hospital.' },
+        { date: 'April 24, 2026', event: 'The Colorado Springs Police Department releases body-camera footage from one officer.' },
+        { date: 'August 17, 2026', event: 'The 4th Judicial District Attorney\'s Office rules the shooting justified. No charges are filed.' },
+      ],
+      related: [],
+      documents: [
+        { title: '4th Judicial District Attorney: release on the April 4, 2026 shooting (August 17, 2026)', url: 'https://irp.cdn-website.com/cb5ff9a3/files/uploaded/DAO+Release+2026_12+Greenfield.pdf', type: 'Official finding' },
+        { title: 'KRDO: shooting involving three Colorado Springs officers ruled justified (August 2026)', url: 'https://krdo.com/news/2026/08/17/cspd-deadly-force-ruled-justified/', type: 'News report' },
+        { title: 'Colorado Springs Gazette: DA justifies officers in fatal shooting at McDonald\'s (August 2026)', url: 'https://gazette.com/2026/08/17/da-justifies-cspd-officers-in-fatally-shooting-man-at-mcdonalds/', type: 'News report' },
+        { title: 'Colorado Springs Gazette: body-camera footage of the stop (April 2026)', url: 'https://gazette.com/2026/04/24/alleged-drug-deal-led-police-to-stop-man-before-trading-fire-killing-him-body-cam-shows/', type: 'News report' },
+      ],
+      officialCaseInfo: {
+        caseNumber: 'DA Release #2026-12',
+        agency: '4th Judicial District Attorney\'s Office',
+      },
+    },
   ],
   missingPersons: realMissingPersons,
   stories: [],
