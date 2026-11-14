@@ -16,14 +16,14 @@ export default function MissingPersonsGrid({ persons }: { persons: MissingPerson
     <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {persons.map((person) => (
         <article key={person.id} className="brand-panel group overflow-hidden rounded-2xl">
-          <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-gradient-to-br from-[#2b2120] via-[#171719] to-[#302921]">
+          <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden bg-gradient-to-br from-[#2b2120] via-[#171719] to-[#302921]">
             {person.photo ? (
               <Image
                 src={person.photo}
                 alt={`Photograph of ${person.name}`}
                 fill
                 sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                className="object-cover object-top"
+                className="object-contain"
               />
             ) : (
               <svg width="96" height="96" viewBox="0 0 96 96" aria-hidden="true" className="text-gray-600" fill="currentColor">

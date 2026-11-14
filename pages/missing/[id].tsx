@@ -67,7 +67,7 @@ export default function MissingPersonDetailPage({ person }: Props) {
           </div>
 
           <article className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-[280px_1fr]">
-            <div className="relative flex aspect-square w-full max-w-[280px] items-center justify-center overflow-hidden rounded-lg border border-gray-800 bg-gradient-to-br from-[#2b2120] via-[#171719] to-[#302921] md:mx-auto">
+            <div className="relative flex aspect-[4/5] w-full max-w-[280px] items-center justify-center overflow-hidden rounded-lg border border-gray-800 bg-gradient-to-br from-[#2b2120] via-[#171719] to-[#302921] md:mx-auto">
               {person.photo ? (
                 <Image
                   src={person.photo}
@@ -75,7 +75,7 @@ export default function MissingPersonDetailPage({ person }: Props) {
                   fill
                   priority
                   sizes="280px"
-                  className="object-cover"
+                  className="object-contain"
                 />
               ) : (
                 <svg width="120" height="120" viewBox="0 0 96 96" aria-hidden="true" className="text-gray-600" fill="currentColor">
