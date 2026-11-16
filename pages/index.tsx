@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
+import ShootingCounter from '@/components/ShootingCounter';
 import CasesGrid from '@/components/CasesGrid';
 import StoriesGrid from '@/components/StoriesGrid';
 import DonateSection from '@/components/DonateSection';
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <ShootingCounter />
 
         <section className="mx-auto max-w-7xl px-4 py-16" aria-labelledby="featured-cases">
           <div className="mb-8 flex items-end justify-between">

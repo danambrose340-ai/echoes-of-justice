@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PrintButton from '@/components/PrintButton';
 import { lastReviewed, quickRights } from '@/data/family-separation';
+import { policeRights, policeRightsLastReviewed, policeRightsSources } from '@/data/police-rights';
 
 const contacts = [
   { name: 'Child Protection Ombudsman of Colorado', detail: 'Independent complaint review', phone: '720-625-8640' },
@@ -25,12 +26,16 @@ export default function KnowYourRightsPage() {
             Know Your Rights
           </h1>
           <p className="mt-3 text-lg text-gray-300">
-            If a child protection caseworker comes to your door. Print it, keep it, give it to
-            someone who needs it.
+            What to do if you are stopped by police, and if a child protection caseworker comes to
+            your door. Print it, keep it, give it to someone who needs it.
           </p>
           <p className="mt-2 text-xs text-gray-500">
-            General information, not legal advice · Reviewed {lastReviewed}
+            General information, not legal advice · Reviewed {policeRightsLastReviewed}
           </p>
+          <nav className="no-print mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm" aria-label="On this page">
+            <a href="#police-heading" className="text-red-300 underline-offset-4 hover:underline">With police</a>
+            <a href="#steps-heading" className="text-red-300 underline-offset-4 hover:underline">With a caseworker</a>
+          </nav>
           <div className="mt-5 flex flex-wrap gap-3">
             <PrintButton />
             <Link
@@ -47,6 +52,47 @@ export default function KnowYourRightsPage() {
             </Link>
           </div>
         </header>
+
+        <section className="mt-8" aria-labelledby="police-heading">
+          <h2 id="police-heading" className="font-serif text-2xl font-bold">
+            If you are stopped by police
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-gray-400">
+            Your safety comes first. Asserting your rights calmly protects you later; arguing on
+            the street rarely does.
+          </p>
+          <ol className="mt-4 space-y-3">
+            {policeRights.map((right, index) => (
+              <li key={right.title} className="print-card rounded-lg border border-gray-800 bg-black/40 p-4">
+                <div className="flex gap-3">
+                  <span
+                    className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-gray-700 font-serif text-xs font-bold text-red-300"
+                    aria-hidden="true"
+                  >
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 className="text-sm font-semibold text-white">{right.title}</h3>
+                    <p className="mt-1 text-sm leading-6 text-gray-300">{right.body}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div className="print-note mt-4 rounded-lg border border-gray-800 bg-gray-900/40 p-4">
+            <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400">
+              The law this section relies on
+            </h3>
+            <ul className="mt-2 space-y-1 text-xs leading-5 text-gray-400">
+              {policeRightsSources.map((source) => (
+                <li key={source}>{source}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <h2 className="mt-12 font-serif text-2xl font-bold">If a caseworker comes to your door</h2>
+        <p className="mt-1 text-xs text-gray-500">Reviewed {lastReviewed}</p>
 
         <section className="print-card mt-6 rounded-lg border border-red-900 bg-red-900/20 p-4 text-sm leading-6 text-red-100">
           <strong className="print-strong">If a child is in immediate danger, call 911.</strong>{' '}

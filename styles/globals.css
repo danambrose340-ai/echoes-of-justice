@@ -156,3 +156,12 @@ textarea:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+/* Police-shooting counter: steady white digits that flash red every few seconds. */
+@keyframes counter-flash {
+  0%, 78%, 100% { color: #ffffff; text-shadow: none; }
+  84%, 92% { color: #ef4444; text-shadow: 0 0 28px rgba(239, 68, 68, 0.55); }
+}
+.counter-flash {
+  color: #ffffff;
+  animation: counter-flash 3.5s ease-in-out infinite;
+}

@@ -14,6 +14,7 @@ const NAV_ITEMS: Array<{ label: string; href: string; wideOnly?: boolean }> = [
   { label: 'Justice', href: '/justice' },
   { label: 'Due Process', href: '/family-separation', wideOnly: true },
   { label: 'Resources', href: '/resources' },
+  { label: 'Know Your Rights', href: '/know-your-rights' },
   { label: 'Get Involved', href: '/get-involved' },
   { label: 'Merch', href: '/merch' },
 ];
@@ -53,7 +54,7 @@ export default function Header() {
           />
         </Link>
 
-        <div className="hidden items-center gap-4 text-sm uppercase tracking-wider text-gray-300 md:flex">
+        <div className="hidden items-center gap-4 text-sm uppercase tracking-wider text-gray-300 xl:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
@@ -72,7 +73,7 @@ export default function Header() {
         </div>
 
         <button
-          className="flex h-11 w-11 items-center justify-center rounded text-white md:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded text-white xl:hidden"
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
           aria-controls="mobileMenu"
           aria-expanded={mobileOpen}
@@ -93,7 +94,7 @@ export default function Header() {
       </nav>
 
       {mobileOpen && (
-        <div id="mobileMenu" className="border-t border-gray-800 bg-black px-4 py-4 md:hidden">
+        <div id="mobileMenu" className="border-t border-gray-800 bg-black px-4 py-4 xl:hidden">
           <div className="flex flex-col gap-3">
             {NAV_ITEMS.map((item) => (
               <Link

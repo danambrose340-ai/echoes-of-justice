@@ -3,11 +3,6 @@ import Link from 'next/link';
 export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-black text-white" aria-label="About Echoes of Justice">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: 'url(/images/brand/og-placeholder.jpg)' }}
-        aria-hidden="true"
-      />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-4 py-24 md:py-32">
