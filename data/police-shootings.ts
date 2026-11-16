@@ -50,6 +50,14 @@ export const policeShootings: PoliceShooting[] = [
     sourceUrl: 'https://gazette.com/2026/11/04/colorado-springs-officers-involved-in-shooting/',
   },
   {
+    date: '2026-10-10',
+    city: 'Pueblo',
+    agency: 'Pueblo Police Department',
+    location: 'Regency Park Apartments, near Gaylord Avenue',
+    outcome: 'killed',
+    sourceUrl: 'https://www.officer.com/on-the-street/news/55411141/home-invasion-suspect-luis-antonio-morales-killed-in-shootout-with-pueblo-police',
+  },
+  {
     date: '2026-07-05',
     city: 'Denver',
     agency: 'Denver Police Department',
@@ -74,12 +82,29 @@ export const policeShootings: PoliceShooting[] = [
     sourceUrl: 'https://seconews.org/article/8816',
   },
   {
+    date: '2026-05-03',
+    city: 'Denver',
+    agency: 'Denver Police Department',
+    location: '16th Street and California Street',
+    outcome: 'injured',
+    sourceUrl: 'https://www.denvergazette.com/2026/05/03/armed-suspect-hospitalized-after-downtown-denver-police-shooting/',
+  },
+  {
     date: '2026-04-25',
     city: 'Denver',
     agency: 'Denver Police Department',
     location: '4300 block of South Quebec Street',
     outcome: 'killed',
     sourceUrl: 'https://www.denvergazette.com/2026/07/22/denver-da-clears-officer-in-april-fatal-shooting/',
+  },
+  {
+    date: '2026-04-07',
+    city: 'Denver',
+    agency: 'Denver Police Department',
+    location: '1012 South Quitman Street',
+    outcome: 'killed',
+    // Denver District Attorney decision letter dated June 25, 2026.
+    sourceUrl: 'https://www.denverda.org/officer-involved-shooting-investigations/',
   },
   {
     date: '2026-04-04',
