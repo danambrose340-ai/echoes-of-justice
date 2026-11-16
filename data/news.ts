@@ -11,9 +11,36 @@ export interface NewsItem {
   caseSlug?: string;
 }
 
-export const newsLastChecked = 'November 14, 2026';
+export const newsLastChecked = 'November 16, 2026';
 
 export const newsItems: NewsItem[] = [
+  {
+    date: 'November 13, 2026',
+    title: 'Colorado Springs police shoot a man near Austin Bluffs Parkway, the third police shooting in nine days',
+    source: 'Colorado Springs Gazette',
+    url: 'https://gazette.com/2026/11/13/officers-responding-to-police-shooting-around-north-nevada-avenue/',
+    summary:
+      'Police say officers responding to a report that a man threatened to shoot a woman in her car fought with him, and that an officer fired when he reached for his own gun. He was hospitalized in critical but stable condition. It was the department\'s sixth police shooting of the year. The El Paso County Sheriff\'s Office is investigating all three November shootings, and the district attorney will decide whether each was justified.',
+    topic: 'Police accountability',
+  },
+  {
+    date: 'November 12, 2026',
+    title: 'Woman killed by a Colorado Springs officer at a Circle K on Austin Bluffs Parkway',
+    source: 'Colorado Springs Gazette',
+    url: 'https://gazette.com/2026/11/12/woman-dies-in-officer-involved-shooting-at-colorado-springs-circle-k/',
+    summary:
+      'Responding to a reported armed robbery shortly after midnight, police say they found a woman holding a gun who pointed it at officers and did not drop it. One officer fired, and she died at the scene. She has not been publicly identified.',
+    topic: 'Police accountability',
+  },
+  {
+    date: 'November 4, 2026',
+    title: 'Man seriously injured in gunfire with a Colorado Springs fugitive task force on North Murray Boulevard',
+    source: 'Colorado Springs Gazette',
+    url: 'https://gazette.com/2026/11/04/colorado-springs-officers-involved-in-shooting/',
+    summary:
+      'Police say a wanted man fired at task-force vehicles in an apartment parking lot and officers, including a sheriff\'s deputy, returned fire. He was hospitalized in serious but stable condition and taken into custody. No officers or bystanders were hurt.',
+    topic: 'Police accountability',
+  },
   {
     date: 'August 28, 2026',
     title: 'Federal judge dismisses excessive-force lawsuit against Colorado Springs and an officer',
